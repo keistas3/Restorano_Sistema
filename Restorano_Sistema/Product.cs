@@ -17,5 +17,4 @@ namespace Restorano_Sistema
             Price = price;
         }
     }
-
 }

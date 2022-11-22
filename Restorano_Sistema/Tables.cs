@@ -18,8 +18,5 @@ namespace Restorano_Sistema
             NumberOfSets = numberOfSets;
             Time = time;
         }
-
-        
-
     }
 }
