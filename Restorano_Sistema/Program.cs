@@ -3,16 +3,16 @@ using Restorano_Sistema;
 using System.Net.Sockets;
 using System.Xml.Linq;
 
-//Perkelti i Tables klase
 int staliukasMelynas = 4;
 int staliukasZalias = 2;
 int staliukasRaudonas = 4;
 int staliukasGeltonas = 2;
 
-StartApp();
-
 void StartApp()
 {
+
+    //repozitorijos 
+    //inicijuotas paduoti i init metoda 
     while (true)
     {
         Init();
@@ -29,7 +29,7 @@ void Init()
     switch (userChoise)
     {
         case "1":
-            TableReservation(staliukasMelynas, staliukasZalias, staliukasRaudonas, staliukasGeltonas);
+            TableReservation(staliukasMelynas, staliukasZalias, staliukasRaudonas, staliukasGeltonas); //makeTableReservation
             break;
         case "2":
             Report();
@@ -47,6 +47,7 @@ void Report()
 {
 
 }
+
 void TableReservation(int staliukasMelynas, int staliukasZalias, int staliukasRaudonas, int staliukasGeltonas)
 {
     Console.WriteLine($"Kurį staliuką koreguoti:");
@@ -161,7 +162,6 @@ void Red()
     }
 
 }
-
 void Yellow()
 {
     Console.WriteLine("************************");
@@ -225,7 +225,6 @@ void Delete()
     }
 
 }
-
 
 int ModifySeat()
 {

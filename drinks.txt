@@ -1,0 +1,3 @@
+Kava, 3, 20
+Gira, 3, 30
+Arbara, 2, 5

@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Restorano_Sistema
 {
-    public class Tables
+    public class Table
     {
         public int Id { get; set; }
         public int NumberOfSets { get; set; }
+        public bool IsOcupied { get; set; }
         TimeOnly Time { get; set; }
 
-        public Tables(int id, int numberOfSets, TimeOnly time)
+        public Table(int id, int numberOfSets, TimeOnly time)
         {
             Id = id;
             NumberOfSets = numberOfSets;
@@ -20,3 +21,4 @@ namespace Restorano_Sistema
         }
     }
 }
+
