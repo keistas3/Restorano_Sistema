@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Restorano_Sistema
 {
-    internal class OrderItem
+    public class OrderItem
     {
         public string OderID { get; set; }
         public string ProductID { get; set; }

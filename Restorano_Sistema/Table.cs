@@ -9,16 +9,15 @@ namespace Restorano_Sistema
     public class Table
     {
         public int Id { get; set; }
-        public int NumberOfSets { get; set; }
+        public int Seats { get; set; }
         public bool IsOcupied { get; set; }
-        TimeOnly Time { get; set; }
-
-        public Table(int id, int numberOfSets, TimeOnly time)
+        
+        public Table(int id, int seats,bool isOcupied)
         {
             Id = id;
-            NumberOfSets = numberOfSets;
-            Time = time;
+            Seats = seats;
+            IsOcupied = isOcupied;
+           
         }
     }
 }
-
